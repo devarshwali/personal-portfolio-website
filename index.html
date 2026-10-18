@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devarsh Wali | Portfolio</title>
+  <meta name="description" content="Portfolio of Devarsh Wali: software engineer in training with years of experience shipping products, from payments to AI.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header: logo and navigation ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Devarsh Wali, back to top">Devarsh<span>.</span></a>
+
+      <button id="menu-btn" class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-btn-label">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero ===== -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Software engineer in training</p>
+          <h1>Hi, I'm Devarsh Wali.</h1>
+          <p class="lead">I build software and I like making it measurable. I have shipped products from a payments platform used by 45M+ people to an AI product MVP built in 3 weeks. Now I am building my engineering skills in a software bootcamp.</p>
+          <div class="hero-actions">
+            <button id="hire-btn" class="btn btn-primary" type="button">Hire Me</button>
+            <a class="btn btn-ghost" href="#projects">See my work</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="images/profile.jpg" width="400" height="400" alt="Portrait of Devarsh Wali">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>I started my career as a product manager and tech lead, where I turned messy business problems into working software. I have worked across EdTech, FinTech, HealthTech and PropTech, from small startups to a global bank. I hold an M.S. in Engineering Management from UMBC and a B.E. in Electrical Engineering from the University of Pune.</p>
+            <p>Right now I am in a software engineering bootcamp, building APIs and full-stack apps and writing tests for all of it. My goal is to land a software engineer role first, then grow into product management and eventually lead AI products.</p>
+
+            <button id="more-btn" class="btn btn-link" type="button" aria-expanded="false" aria-controls="more-about">More about me</button>
+            <div id="more-about" class="more-about" hidden>
+              <p>Outside work I like building small tools for myself, like a job search app that tracks applications. I enjoy the part of engineering where a vague idea becomes something people can click.</p>
+              <p>I care about clear writing, tested code and shipping in small steps.</p>
+            </div>
+          </div>
+
+          <aside class="about-card" aria-label="Experience highlights">
+            <h3>Experience</h3>
+            <ul class="timeline">
+              <li><strong>AI Product Manager</strong><span>Mindset CoPilot, 2026</span><em>MVP in 3 weeks, LangGraph evaluation agents, 95% adoption</em></li>
+              <li><strong>Product &amp; Strategy Fellow</strong><span>Presence, 2025</span><em>ML referral routing model, SQL dashboards, 54% to 66% onboarding</em></li>
+              <li><strong>Product Manager</strong><span>Barclays, 2023</span><em>$110M+ payment volume, 45M+ monthly users</em></li>
+              <li><strong>Product Manager</strong><span>BYJU'S, 2021 to 2023</span><em>0 to 1 launch, $1.2M+ monthly revenue in 10 months</em></li>
+              <li><strong>Product Manager / Product Engineer</strong><span>Opportune, 2019 to 2021</span><em>Tech lead for 20+ workflow launches</em></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-intro">Three things I built. Each card opens a short write-up.</p>
+
+        <div class="project-grid">
+
+          <article class="project-card">
+            <a class="card-image" href="projects/task-manager.html" tabindex="-1" aria-hidden="true">
+              <img src="images/task-manager.jpg" width="900" height="562" alt="">
+            </a>
+            <div class="card-body">
+              <h3><a href="projects/task-manager.html">Student Task Manager</a></h3>
+              <p>A REST API where students sign up, log in and manage their own tasks. Passwords are hashed, routes are protected, and 56 automated tests pass.</p>
+              <ul class="tags"><li>Node.js</li><li>Express</li><li>SQLite</li><li>JWT</li></ul>
+              <p class="card-links"><a href="projects/task-manager.html">Read more</a> <a href="https://github.com/devarshwali/student-task-manager" target="_blank" rel="noopener">GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="card-image" href="projects/applifirst.html" tabindex="-1" aria-hidden="true">
+              <img src="images/applifirst.jpg" width="900" height="562" alt="">
+            </a>
+            <div class="card-body">
+              <h3><a href="projects/applifirst.html">AppliFirst</a></h3>
+              <p>A job search marketplace with discovery, filters, application tracking and automations, plus a Chrome extension. Over 20 features.</p>
+              <ul class="tags"><li>React</li><li>TypeScript</li><li>Chrome extension</li></ul>
+              <p class="card-links"><a href="projects/applifirst.html">Read more</a> <a href="https://applifirst-production.up.railway.app/" target="_blank" rel="noopener">Live app</a></p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="card-image" href="projects/css-profile-cards.html" tabindex="-1" aria-hidden="true">
+              <img src="images/css-cards.jpg" width="900" height="562" alt="">
+            </a>
+            <div class="card-body">
+              <h3><a href="projects/css-profile-cards.html">CSS Profile Cards</a></h3>
+              <p>A set of profile cards that practice CSS display and positioning: block, inline-block, relative, absolute, sticky and fixed.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>Positioning</li></ul>
+              <p class="card-links"><a href="projects/css-profile-cards.html">Read more</a> <a href="https://github.com/devarshwali/css-profile-cards" target="_blank" rel="noopener">GitHub</a></p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <article class="skill-group">
+            <h3>Languages</h3>
+            <ul class="tags"><li>JavaScript</li><li>TypeScript</li><li>Python</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
+          </article>
+          <article class="skill-group">
+            <h3>Frameworks and APIs</h3>
+            <ul class="tags"><li>React</li><li>Node.js</li><li>Express</li><li>REST APIs</li><li>JWT authentication</li></ul>
+          </article>
+          <article class="skill-group">
+            <h3>AI and Data</h3>
+            <ul class="tags"><li>LangGraph</li><li>LLM evaluation</li><li>RAG</li><li>Claude Code</li><li>Tableau</li></ul>
+          </article>
+          <article class="skill-group">
+            <h3>Tools and Practice</h3>
+            <ul class="tags"><li>Git and GitHub</li><li>Automated testing</li><li>AWS</li><li>Jira</li><li>Agile and Scrum</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section section-alt">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p class="section-intro">Have a role, a question or feedback on this site? Send a note. I read everything.</p>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:devarshwali@gmail.com">devarshwali@gmail.com</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/devarshwali/" target="_blank" rel="noopener">linkedin.com/in/devarshwali</a></li>
+            <li><span>GitHub</span><a href="https://github.com/devarshwali" target="_blank" rel="noopener">github.com/devarshwali</a></li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <h3>Send feedback or a message</h3>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error">
+            <p id="name-error" class="error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error">
+            <p id="email-error" class="error" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="topic">What is this about?</label>
+            <select id="topic" name="topic">
+              <option value="Feedback on the site">Feedback on the site</option>
+              <option value="Job opportunity">Job opportunity</option>
+              <option value="Question">Question</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+            <p id="message-error" class="error" role="alert"></p>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Devarsh Wali</p>
+      <p><a href="https://github.com/devarshwali" target="_blank" rel="noopener">GitHub</a> <a href="https://www.linkedin.com/in/devarshwali/" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
