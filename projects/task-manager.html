@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Task Manager | Devarsh Wali</title>
+  <meta name="description" content="A tested REST API for student task management built with Node.js, Express and SQLite.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html" aria-label="Devarsh Wali, portfolio home">Devarsh<span>.</span></a>
+      <a class="btn btn-ghost" href="../index.html#projects">All projects</a>
+    </div>
+  </header>
+
+  <main class="project-page">
+    <div class="container">
+      <article>
+        <a class="back-link" href="../index.html#projects">&larr; Back to projects</a>
+        <h1>Student Task Manager</h1>
+        <p class="lead">A REST API where students sign up, log in and manage their own tasks, built to practice backend basics and a clean Git workflow.</p>
+        <ul class="tags"><li>Node.js</li><li>Express</li><li>SQLite</li><li>JWT</li><li>Automated tests</li></ul>
+
+        <img src="../images/task-manager.jpg" width="900" height="562" alt="Terminal output showing 56 passing tests">
+
+        <h2>What it does</h2>
+        <ul class="plain">
+          <li>Students register and log in. Passwords are hashed and never returned.</li>
+          <li>Logged-in students create, update, complete and delete only their own tasks.</li>
+          <li>Tasks can be searched and filtered by status and priority.</li>
+          <li>Bad input returns a clear 400 error. Unexpected errors return a safe 500 message with no internal details.</li>
+        </ul>
+
+        <h2>How I built it</h2>
+        <ul class="plain">
+          <li>Node.js and Express for the API, SQLite for storage, JWT for authentication.</li>
+          <li>Separate feature, bugfix and hotfix branches on GitHub, with small commits.</li>
+          <li>56 automated tests cover authentication, validation, filters and error handling. All of them pass.</li>
+        </ul>
+
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://github.com/devarshwali/student-task-manager" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Devarsh Wali</p>
+      <p><a href="../index.html">Portfolio home</a></p>
+    </div>
+  </footer>
+</body>
+</html>
